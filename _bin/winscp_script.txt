@@ -1,0 +1,6 @@
+option batch abort
+option confirm off
+open ftp://%FTP_LOGIN%:%FTP_PASSWORD%@%FTP_HOST%
+synchronize remote ".\public\" %FTP_FOLDER%
+close
+exit

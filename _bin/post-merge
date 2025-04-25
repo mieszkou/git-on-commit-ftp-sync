@@ -1,0 +1,9 @@
+#!/bin/sh
+# Post-merge hook
+# This script runs after a successful merge.
+
+BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+if [ "$BRANCH_NAME" = "main" ]; then
+    echo "Post-merge hook: Running deployment script for main branch."
+    ./_bin/winscp.cmd
+fi

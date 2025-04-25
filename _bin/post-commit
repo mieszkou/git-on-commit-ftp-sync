@@ -1,0 +1,10 @@
+#!/bin/sh
+# Umieść plik tu: .git/hooks/post-commit
+# Obejscie przez plik cmd 
+# (bez tego znaki / na poczatki parametrow sa zamieniane na C:/Program Files/Git/)
+
+BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+if [ "$BRANCH_NAME" = "main" ]; then
+    ./_bin/winscp.cmd
+fi
+
