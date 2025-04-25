@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi 🙃</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100svh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(157deg, #262A2D 15%, #000000 50%, #262A2D 80%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        .contact-box {
+            text-align: left; 
+            margin-left: 2rem; 
+            margin-top: 20px; 
+            padding: 2rem; 
+            border-left: 1px solid #F4CE7E; 
+            color: #F4CE7E; 
+            
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logo {
+                margin-bottom: 20px;
+            }
+
+            .contact-box {
+                margin: 0;
+                padding: 1rem;
+                margin: 0 2rem;
+                border-left: none;
+                border-left: 0px;
+                border-top: 1px solid #F4CE7E;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <!-- Obrazek logo -->
+    <div class="logo">
+        <img src="img/logo.png" alt="Trade Vista" title="Trade Vista" />
+    </div>
+
+    <!-- Ramka z informacjami kontaktowymi -->
+    <div class="contact-box">
+        <p><strong>Comming soon</strong><br>
+           
+        </p>
+    </div>
+</body> 
+</html>
