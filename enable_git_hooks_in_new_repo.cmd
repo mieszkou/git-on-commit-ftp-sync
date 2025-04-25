@@ -4,6 +4,7 @@ REM Script to enable git hooks in a new repository
 REM Check if .git directory exists
 if not exist .git (
     echo Error: .git directory not found. Please run this script from the root of a git repository.
+    pause
     exit /b 1
 )
 
