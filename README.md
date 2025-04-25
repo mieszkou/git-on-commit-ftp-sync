@@ -1,5 +1,19 @@
 # Synchronizacja po commit na `main`
 
+Ten projekt umożliwia automatyczną synchronizację plików z serwerem FTP po wykonaniu commitu na gałęzi `main`. Poniżej znajduje się opis działania oraz konfiguracji skryptów.
+
+## Pliki i konfiguracja
+
+### 1. Plik `.env`
+Plik `.env` zawiera dane konfiguracyjne potrzebne do połączenia z serwerem FTP. Przykładowy plik `.env.sample` wygląda następująco:
+
+```
+FTP_HOST=host.example.com
+FTP_LOGIN=login
+FTP_PASSWORD=pass
+FTP_FOLDER=/public_html/
+```
+
 Skopiuj plik `.env.sample` do `.env` i uzupełnij odpowiednimi danymi.
 
 ### 2. Skrypt `enable_git_hooks_in_new_repo.cmd`
